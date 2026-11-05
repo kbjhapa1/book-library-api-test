@@ -1,0 +1,24 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Django ---
+db.sqlite3
+*.sqlite3
+*.sqlite3-journal
+
+# --- Certificates and private keys: NEVER commit these ---
+certs/*
+!certs/README.md
+
+# --- Node / Playwright ---
+node_modules/
+api-tests/test-results/
+api-tests/playwright-report/
+
+# --- Local configuration and scratch files ---
+.env
+.env.*
+scratch/

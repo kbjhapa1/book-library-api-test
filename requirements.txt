@@ -1,0 +1,5 @@
+# Tested with: Django 6.1.2, djangorestframework 3.18.3, uvicorn 0.54.0
+# (Django 6 needs Python 3.12+; on older Python pip will pick Django 5.2, which also works.)
+Django>=5.2,<7
+djangorestframework>=3.16,<4
+uvicorn>=0.30,<1

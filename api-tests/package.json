@@ -1,0 +1,18 @@
+{
+  "name": "book-library-api-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright API tests (HTTP only, no browser) for the Django Book Library API lab",
+  "scripts": {
+    "test": "cross-env NODE_EXTRA_CA_CERTS=../certs/localhost-cert.pem playwright test",
+    "test:verbose": "cross-env NODE_EXTRA_CA_CERTS=../certs/localhost-cert.pem DEBUG=pw:api playwright test",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "cross-env": "^10.1.0",
+    "typescript": "^7.0.2"
+  }
+}
